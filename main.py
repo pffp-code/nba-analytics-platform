@@ -1,30 +1,27 @@
-from src.fetch_players import (
-    fetch_player_stats
-)
-
-from src.build_rankings import (
-    build_rankings
-)
-
-from src.generate_report import (
-    generate_report
-)
+from src.fetch_players import fetch_player_statistics
+from src.data_cleaner import clean_player_data
+from src.ppi import calculate_ppi
+from src.report_generator import generate_ppi_report
 
 
 def main():
 
-    print("=== Phase 1 ===")
+    print("NBA Analytics Platform")
+    print("-" * 30)
 
-    print("Fetching NBA data...")
-    fetch_player_stats()
+    # Step 1: Download player statistics
+    fetch_player_statistics()
 
-    print("Building rankings...")
-    build_rankings()
+    # Step 2: Clean the data
+    clean_player_data()
 
-    print("Generating report...")
-    generate_report()
+    # Step 3: Calculate Player Performance Index
+    calculate_ppi()
 
-    print("Done.")
+    # Step 4: Generate the final report
+    generate_ppi_report()
+
+    print("\nDone!")
 
 
 if __name__ == "__main__":

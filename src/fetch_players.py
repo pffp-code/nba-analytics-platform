@@ -1,43 +1,31 @@
 from nba_api.stats.endpoints import leagueleaders
 
-from src.config import PLAYER_STATS_FILE
+from config import PLAYER_STATS_FILE
 
 
-def fetch_player_stats():
+def fetch_player_statistics():
+    # Get the latest NBA player statistics
+    leaders = leagueleaders.LeagueLeaders()
 
-    leaders = leagueleaders.LeagueLeaders(
-        season='2025-26'
-    )
+    # LeagueLeaders only returns one DataFrame
+    player_stats = leaders.get_data_frames()[0]
 
-    df = leaders.get_data_frames()[0]
-
-    print(df.columns.tolist())
-
-    columns = [
-        "PLAYER",
-        "TEAM",
-        "PTS",
-        "REB",
-        "AST",
-        "GP"
-    ]
-
-    df = df[columns]
-
+    # Create folder if it doesn't exist
     PLAYER_STATS_FILE.parent.mkdir(
         parents=True,
         exist_ok=True
     )
 
-    df.to_csv(
+    # Save the raw data
+    player_stats.to_csv(
         PLAYER_STATS_FILE,
         index=False
     )
 
-    print(f"Saved: {PLAYER_STATS_FILE}")
+    print(f"Downloaded {len(player_stats)} players")
 
-    return df
+    return player_stats
 
 
 if __name__ == "__main__":
-    fetch_player_stats()
+    fetch_player_statistics()
