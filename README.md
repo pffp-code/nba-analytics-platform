@@ -60,4 +60,4 @@ I know this project is still small, but every big project starts with a first st
 
 I'll keep building it, keep learning, and see how far it can go.
 
-**Let's do it! 🚀🏀**
+**Let's do it! 🏀🏀🏀🏀🏀🏀**
