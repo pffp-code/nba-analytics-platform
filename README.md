@@ -19,8 +19,9 @@ This is only my first step. As I learn more programming, I want to keep making t
 ## What it does
 
 - Download NBA player statistics
-- Save the data into CSV files
-- Rank NBA players
+- Clean the raw data
+- Calculate a custom Player Performance Index (PPI)
+- Rank players using PPI
 - Generate a Top 10 report
 
 ## Built With
@@ -50,10 +51,9 @@ This is only Phase 1.
 
 Here are some ideas I want to build next:
 
-- A Player Performance Index (PPI)
-- Better player comparisons
+- Try different ways to rank players
+- Learn more NBA statistics
 - Charts and visualizations
-- More NBA statistics
 - Build my own NBA team and become the General Manager! I want to make trades, build the best roster, and try to win the NBA Championship. 😄
 
 I know this project is still small, but every big project starts with a first step.
