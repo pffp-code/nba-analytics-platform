@@ -1,0 +1,19 @@
+PLAYER COMPARISON
+======================================================================
+
+Category       Shai Gilgeous-Alexander (OKC)Jalen Brunson (NYK)      
+----------------------------------------------------------------------
+Points         2117                     1927                     
+Rebounds       292                      247                      
+Assists        448                      503                      
+Steals         95                       57                       
+Blocks         52                       8                        
+PPI            1009.5                   927.3                    
+----------------------------------------------------------------------
+
+Summary
+------------------------------
+- Shai Gilgeous-Alexander scores more points.
+- Shai Gilgeous-Alexander grabs more rebounds.
+- Jalen Brunson makes more assists.
+- Overall winner: Shai Gilgeous-Alexander
